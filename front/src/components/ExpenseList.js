@@ -14,7 +14,7 @@ const ExpenseList = () => {
   useEffect(() => {
     const fetchExpenses = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/expenses');
+        const res = await axios.get('https://expence-management.onrender.com/api/expenses');
         setExpenses(res.data);
         
         // Extract unique categories
@@ -34,7 +34,7 @@ const ExpenseList = () => {
   const deleteExpense = async (id) => {
     if (window.confirm('Are you sure you want to delete this expense?')) {
       try {
-        await axios.delete(`http://localhost:5000/api/expenses/${id}`);
+        await axios.delete(`https://expence-management.onrender.com/api/expenses/${id}`);
         setExpenses(expenses.filter(expense => expense._id !== id));
       } catch (err) {
         console.error('Error deleting expense', err);

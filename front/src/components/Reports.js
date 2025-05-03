@@ -61,7 +61,7 @@ const Reports = () => {
   useEffect(() => {
     const fetchAllExpenses = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/expenses');
+        const res = await axios.get('https://expence-management.onrender.com/api/expenses');
         setExpenses(res.data);
         
         // Extract unique categories

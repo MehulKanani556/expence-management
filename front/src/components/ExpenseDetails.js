@@ -16,7 +16,7 @@ const ExpenseDetails = () => {
   useEffect(() => {
     const fetchExpense = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/expenses/${id}`);
+        const res = await axios.get(`https://expence-management.onrender.com/api/expenses/${id}`);
         setExpense(res.data);
         setLoading(false);
       } catch (err) {
@@ -31,7 +31,7 @@ const ExpenseDetails = () => {
   const deleteExpense = async () => {
     if (window.confirm('Are you sure you want to delete this expense?')) {
       try {
-        await axios.delete(`http://localhost:5000/api/expenses/${id}`);
+        await axios.delete(`https://expence-management.onrender.com/api/expenses/${id}`);
         navigate('/expenses');
       } catch (err) {
         console.error('Error deleting expense', err);

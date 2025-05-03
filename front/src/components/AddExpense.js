@@ -50,7 +50,7 @@ const AddExpense = () => {
     }
     
     try {
-      await axios.post('http://localhost:5000/api/expenses', {
+      await axios.post('https://expence-management.onrender.com/api/expenses', {
         description,
         amount: parseFloat(amount),
         category,

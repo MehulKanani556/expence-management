@@ -44,7 +44,7 @@ const EditExpense = () => {
   useEffect(() => {
     const fetchExpense = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/expenses/${id}`);
+        const res = await axios.get(`https://expence-management.onrender.com/api/expenses/${id}`);
         const expense = res.data;
         
         setDescription(expense.description);
@@ -75,7 +75,7 @@ const EditExpense = () => {
     }
     
     try {
-      await axios.put(`http://localhost:5000/api/expenses/${id}`, {
+      await axios.put(`https://expence-management.onrender.com/api/expenses/${id}`, {
         description,
         amount: parseFloat(amount),
         category,
