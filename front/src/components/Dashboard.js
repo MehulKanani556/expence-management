@@ -185,7 +185,7 @@ const Dashboard = () => {
               <Card className="text-center">
                 <Card.Body>
                   <Card.Title>Total Expenses</Card.Title>
-                  <h2>${totalExpense.toFixed(2)}</h2>
+                  <h2>{totalExpense.toFixed(2)}</h2>
                 </Card.Body>
               </Card>
             </Col>
@@ -201,7 +201,7 @@ const Dashboard = () => {
               <Card className="text-center">
                 <Card.Body>
                   <Card.Title>Average Transaction</Card.Title>
-                  <h2>${(totalExpense / filteredExpenses.length).toFixed(2)}</h2>
+                  <h2>{(totalExpense / filteredExpenses.length).toFixed(2)}</h2>
                 </Card.Body>
               </Card>
             </Col>

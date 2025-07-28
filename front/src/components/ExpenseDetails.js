@@ -61,7 +61,7 @@ const ExpenseDetails = () => {
           <Card.Body>
             <ListGroup variant="flush">
               <ListGroup.Item>
-                <strong>Amount:</strong> ${expense.amount.toFixed(2)}
+                <strong>Amount:</strong> {expense.amount.toFixed(2)}
               </ListGroup.Item>
               <ListGroup.Item>
                 <strong>Category:</strong> {expense.category}

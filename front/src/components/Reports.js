@@ -418,7 +418,7 @@ const Reports = () => {
               <Card className="text-center">
                 <Card.Body>
                   <Card.Title>Total Expenses</Card.Title>
-                  <h2>${summaryData.totalExpense.toFixed(2)}</h2>
+                  <h2>{summaryData.totalExpense.toFixed(2)}</h2>
                 </Card.Body>
               </Card>
             </Col>
@@ -426,7 +426,7 @@ const Reports = () => {
               <Card className="text-center">
                 <Card.Body>
                   <Card.Title>Average Expense</Card.Title>
-                  <h2>${summaryData.avgExpense.toFixed(2)}</h2>
+                  <h2>{summaryData.avgExpense.toFixed(2)}</h2>
                 </Card.Body>
               </Card>
             </Col>
@@ -499,7 +499,7 @@ const Reports = () => {
                     return (
                       <tr key={index}>
                         <td>{category}</td>
-                        <td>${amount.toFixed(2)}</td>
+                        <td>{amount.toFixed(2)}</td>
                         <td>{percentage.toFixed(2)}%</td>
                       </tr>
                     );

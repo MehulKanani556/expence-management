@@ -101,7 +101,7 @@ const ExpenseList = () => {
                   <td>{new Date(expense.date).toLocaleDateString()}</td>
                   <td>{expense.description}</td>
                   <td>{expense.category}</td>
-                  <td>${expense.amount.toFixed(2)}</td>
+                  <td>{expense.amount.toFixed(2)}</td>
                   <td>
                     <Link to={`/expense/${expense._id}`} className="btn btn-info btn-sm me-2">
                       <FaEye />
