@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const expenseRoutes = require('./routes/expenses');
+const borrowRoutes = require('./routes/borrows');
 
 dotenv.config();
 const app = express();
@@ -14,6 +15,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/expenses', expenseRoutes);
+app.use('/api/borrows', borrowRoutes);
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)

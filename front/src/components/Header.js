@@ -18,6 +18,9 @@ const Header = () => {
             <LinkContainer to="/expenses">
               <Nav.Link>Expenses</Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/borrows">
+              <Nav.Link>Borrows</Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/add-expense">
               <Nav.Link>Add Expense</Nav.Link>
             </LinkContainer>

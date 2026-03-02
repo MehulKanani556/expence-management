@@ -4,7 +4,9 @@ import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 const CATEGORIES = [
-  'Food & Dining',
+ 'Food & Dining',
+  'Bike',
+  'Home',
   'Transportation',
   'Utilities',
   'Housing',
@@ -14,7 +16,8 @@ const CATEGORIES = [
   'Personal Care',
   'Education',
   'Travel',
-  'Gifts & Donations',
+  'Nirmal',
+  'Gifts & Donations',  
   'Other'
 ];
 

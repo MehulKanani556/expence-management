@@ -6,6 +6,7 @@ import axios from 'axios';
 const CATEGORIES = [
   'Food & Dining',
   'Bike',
+  'Home',
   'Transportation',
   'Utilities',
   'Housing',
