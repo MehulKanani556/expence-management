@@ -17,6 +17,7 @@ const CATEGORIES = [
   'Education',
   'Travel',
   'Nirmal',
+  'Home Her',
   'Gifts & Donations',  
   'Other'
 ];
