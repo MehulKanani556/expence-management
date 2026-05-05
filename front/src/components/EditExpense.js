@@ -17,6 +17,7 @@ const CATEGORIES = [
   'Education',
   'Travel',
   'Nirmal',
+  'Kuldeep',
   'Home Her',
   'Gifts & Donations',  
   'Other'
